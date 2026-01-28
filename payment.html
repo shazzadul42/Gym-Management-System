@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Payment | FitnessHub Gym</title>
+<style>
+:root {
+  --primary: rgb(255, 107, 53);
+  --bg: #f4f5f7;
+  --card-bg: #fff;
+  --text-dark: #222;
+  --text-light: #555;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  background: var(--bg);
+  color: var(--text-dark);
+}
+
+/* Sidebar */
+.sidebar {
+  width: 230px;
+  background: var(--card-bg);
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  border-right: 1px solid #ddd;
+}
+.sidebar h2 {
+  text-align: center;
+  margin: 20px 0;
+  color: var(--primary);
+}
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+.sidebar ul li {
+  margin: 15px 0;
+}
+.sidebar ul li a {
+  color: inherit;
+  text-decoration: none;
+  padding: 10px 20px;
+  display: block;
+  border-radius: 8px;
+  transition: 0.2s;
+}
+.sidebar ul li a:hover {
+  background: var(--primary);
+  color: #fff;
+}
+
+/* Main */
+.main-content {
+  margin-left: 230px;
+  padding: 30px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header h1 {
+  color: var(--primary);
+  margin-bottom: 0px;
+  margin-top: 0px;
+}
+
+/* Payment Card */
+.payment-card {
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  max-width: 600px;
+  margin: 40px auto;
+  margin-top: 0px;
+  
+}
+.payment-card h2 {
+  text-align: center;
+  color: var(--primary);
+}
+.payment-card p {
+  color: var(--text-light);
+  text-align: center;
+}
+
+/* Plan Summary */
+.plan-summary {
+  margin-top: 20px;
+  border-top: 1px solid #eee;
+  padding-top: 15px;
+}
+.plan-summary div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+.plan-summary div span {
+  font-size: 15px;
+}
+
+/* Payment Methods */
+.payment-methods {
+  margin-top: 30px;
+}
+.payment-methods label {
+  display: block;
+  margin: 8px 0;
+  padding: 10px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.payment-methods label:hover {
+  background: #eef4ff;
+  border-color: var(--primary);
+}
+.payment-methods input {
+  margin-right: 10px;
+}
+
+/* Pay Button */
+.pay-btn {
+  background: var(--primary);
+  color: white;
+  padding: 14px 0;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  margin-top: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.pay-btn:hover {
+  background: #1f6be0;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  margin-top: 0px;
+  color: #777;
+}
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+  <h2> FitnessHub</h2>
+  <ul>
+   <li><a href="./dashboard1.php" >🏠 Dashboard</a></li>
+        <li><a href="./edit_profile.php">👤 Edit Profile</a></li>
+        <li><a href="./payment.html" style="background-color: rgb(255, 107, 53); color:white;">💳 Payments</a></li>
+        <li><a href="./dashboard_class.html" >📅 Classes</a></li>
+        <li><a href="./progress.html">📈 Progress</a></li>
+        <li><a href="./dashboard_trainers.html">🏋‍♀ Trainers</a></li>
+        <li><a href="./dashboard_srvices.html">⚙️ Services</a></li>
+        <li><a href="./dashboard_contact.html">➤ Contact</a></li>
+        <li><a href="./dashboard_about.html">ℹ️ About</a></li>
+        <li><a href="./logout.php">🚪 Logout</a></li>
+  </ul>
+</div>
+
+<div class="main-content">
+  <div class="header">
+    <h1>Payment</h1>
+  </div>
+
+  <div class="payment-card">
+    <h2>Renew Your Fitness Plan</h2>
+    <p>Securely complete your payment to continue your membership.</p>
+
+    <div class="plan-summary">
+      <div><span>Plan:</span><span>Premium (Monthly)</span></div>
+      <div><span>Duration:</span><span>30 Days</span></div>
+      <div><span>Amount:</span><span>৳1000</span></div>
+      <div><span>Discount:</span><span>৳ 0.00</span></div>
+      <div style="font-weight: bold;"><span>Total:</span><span>৳1000</span></div>
+    </div>
+
+    <div class="payment-methods">
+      <h3>Select Payment Method</h3>
+      <label><input type="radio" name="method" checked> Credit/Debit Card</label>
+      <label><input type="radio" name="method"> bKash</label>
+      <label><input type="radio" name="method"> Nagad</label>
+      <label><input type="radio" name="method"> Rocket</label>
+    </div>
+
+    <a href="./paynow.html">
+  	<button class="pay-btn">💰 Pay Now</button>
+</a>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 FitnessHub Gym. All rights reserved.</p>
+  </footer>
+</div>
+
+</body>
+</html>

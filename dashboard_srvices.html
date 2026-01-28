@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard | Services</title>
+  <link rel="stylesheet" href="dashboard.css" />
+  <style>
+    body {
+      font-family: "Poppins", sans-serif;
+      background-color: #f8f9fc;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    .dashboard-container {
+      display: flex;
+      min-height: 100vh;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      width: 230px;
+      
+      color: white;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .sidebar h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #ff5e00;
+    }
+
+    .sidebar a {
+      text-decoration: none;
+      color: rgb(0, 0, 0);
+      padding: 10px 15px;
+      margin: 5px 0;
+      border-radius: 6px;
+      transition: 0.3s;
+      display: block;
+    }
+
+    .sidebar a:hover,
+    .sidebar a.active {
+      background: #ff5e00;
+    }
+
+    /* Main Content */
+    .main-content {
+      flex: 1;
+      padding: 30px;
+    }
+
+    .main-content h1 {
+      color: #ff5e00;
+      font-size: 26px;
+      margin-bottom: 20px;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+      margin-top: 70px;
+    }
+
+    .service-card {
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+      text-align: center;
+      transition: transform 0.3s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .service-card i {
+      font-size: 36px;
+      color: #ff5e00;
+      margin-bottom: 15px;
+    }
+
+    .service-card h3 {
+      font-size: 20px;
+      color: #222;
+      margin-bottom: 10px;
+    }
+
+    .service-card p {
+      font-size: 14px;
+      color: #666;
+      margin-bottom: 10px;
+    }
+
+    .service-features {
+      list-style: none;
+      padding: 0;
+      text-align: left;
+      color: #444;
+      font-size: 13px;
+    }
+
+    .service-features li {
+      margin: 5px 0;
+      padding-left: 20px;
+      position: relative;
+    }
+
+    .service-features li::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      color: #ff5e00;
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: #888;
+      font-size: 13px;
+      margin-top: 160px;
+    }
+  </style>
+
+</head>
+<body>
+  <div class="dashboard-container">
+    <aside class="sidebar">
+      <h2>FitnessHub</h2>
+      <a href="dashboard1.php">🏠 Dashboard</a>
+      <a href="edit_profile.php">👤 Edit Profile</a>
+      <a href="./payment.html">💳 Payment</a>
+      <a href="./dashboard_class.html">📅 Classes</a>
+      <a href="./progress.html">📈 Progress</a>
+       <a href="./dashboard_trainers.html">🏋‍♀ Trainers</a>
+        <a href="./dashboard_srvices.html" class="active" style="background-color: rgb(255, 107, 53); color:white;">⚙️ Services</a>
+        <a href="./dashboard_contact.html">➤ Contact</a>
+        <a href="./dashboard_about.html">ℹ️ About</a>
+      <a href="logout.php">🚪 Logout</a>
+    </aside>
+
+    <main class="main-content">
+      <h1>Our Gym Services</h1>
+      <p>Explore the facilities and programs available to enhance your fitness journey.</p>
+
+      <div class="services-grid">
+        <div class="service-card">
+          <i class="fas fa-dumbbell"></i>
+          <h3>Strength Training</h3>
+          <p>Boost your power and endurance with top-tier equipment.</p>
+          <ul class="service-features">
+            <li>Professional equipment</li>
+            <li>Personalized strength plans</li>
+            <li>Experienced coaches</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <i class="fas fa-heartbeat"></i>
+          <h3>Cardio Fitness</h3>
+          <p>Improve stamina and heart health through intense cardio workouts.</p>
+          <ul class="service-features">
+            <li>Modern treadmills</li>
+            <li>Rowing machines</li>
+            <li>Endurance tracking</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <i class="fas fa-users"></i>
+          <h3>Group Sessions</h3>
+          <p>Join fun, community-based fitness classes with certified instructors.</p>
+          <ul class="service-features">
+            <li>Yoga</li>
+            <li>Zumba</li>
+            <li>HIIT classes</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <i class="fas fa-apple-alt"></i>
+          <h3>Nutrition Planning</h3>
+          <p>Personalized meal plans to maximize your results.</p>
+          <ul class="service-features">
+            <li>Diet consultations</li>
+            <li>Weekly tracking</li>
+            <li>Healthy recipes</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <i class="fas fa-user-tie"></i>
+          <h3>Personal Training</h3>
+          <p>Get one-on-one attention from our expert trainers.</p>
+          <ul class="service-features">
+            <li>Customized workouts</li>
+            <li>Goal tracking</li>
+            <li>Flexible timing</li>
+          </ul>
+        </div>
+
+        <div class="service-card">
+          <i class="fas fa-spa"></i>
+          <h3>Recovery Therapy</h3>
+          <p>Relax, recover, and recharge your body post-workout.</p>
+          <ul class="service-features">
+            <li>Massage therapy</li>
+            <li>Sauna and steam</li>
+            <li>Stretch zones</li>
+          </ul>
+        </div>
+      </div>
+
+      <footer>
+        © 2025 FitnessHub Gym | All Rights Reserved
+      </footer>
+    </main>
+  </div>
+</body>
+</html>

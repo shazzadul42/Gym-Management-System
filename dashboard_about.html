@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | FitnessHub Dashboard</title>
+  <link rel="stylesheet" href="about.css">
+  <style>
+    /* General layout */
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background: #f5f5f5;
+  display: flex;
+  height: 100vh;
+  overflow-x: hidden;
+}
+
+.dashboard-container {
+  display: flex;
+  width: 100%;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 240px;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  position: fixed;
+  height: 100vh;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #ff5e00;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-menu li {
+  margin-bottom: 1.2rem;
+}
+
+.sidebar-menu a {
+  text-decoration: none;
+  color: black;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 8px;
+  border-radius: 6px;
+  transition: 0.3s;
+}
+
+.sidebar-menu a:hover,
+.sidebar-menu a.active {
+  background: #ff5e00;
+  color: #fff;
+}
+
+/* Main Content */
+.main-content {
+  margin-left: 240px;
+  padding: 2rem;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.dashboard-header {
+  margin-bottom: 1rem;
+}
+
+.dashboard-header h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #222;
+}
+
+/* Hero */
+.about-hero {
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('ourstory.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  padding: 6rem 2rem;
+  text-align: center;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+/* Mission */
+.mission-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  background: #fff;
+  padding: 2rem;
+  border-radius: 10px;
+  margin-bottom: 2rem;
+}
+
+.mission-text h3 {
+  color: #ff5e00;
+}
+
+.mission-stats {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.stat span {
+  display: block;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #111;
+}
+
+/* Values */
+.values-section {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.value-card {
+  background: #fff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.value-card:hover {
+  transform: translateY(-5px);
+}
+
+.value-card i {
+  font-size: 2rem;
+  color: #ff5e00;
+  margin-bottom: 1rem;
+}
+
+/* Team */
+.team-section {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.founders-grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.founder-card {
+  background: #fff;
+  border-radius: 10px;
+  padding: 1.5rem;
+  max-width: 300px;
+}
+
+.founder-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/* CTA */
+.about-cta {
+  background: #ff5e00;
+  color: #fff;
+  text-align: center;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.about-cta .btn {
+  background: #fff;
+  color: #ff5e00;
+  padding: 0.8rem 1.5rem;
+  border-radius: 6px;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+/* Footer */
+.dashboard-footer {
+  text-align: center;
+  margin-top: 2rem;
+  color: #555;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px;
+  }
+
+  .main-content {
+    margin-left: 200px;
+    padding: 1rem;
+  }
+
+  .mission-section {
+    flex-direction: column;
+  }
+
+  .founders-grid {
+    flex-direction: column;
+  }
+}
+
+  </style>
+
+</head>
+
+<body>
+  <div class="dashboard-container">
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <h2 class="logo">FitnessHub</h2>
+      <ul class="sidebar-menu">
+        <li><a href="./dashboard1.php" >🏠 Dashboard</a></li>
+        <li><a href="./edit_profile.php">👤 Edit Profile</a></li>
+        <li><a href="./payment.html">💳 Payments</a></li>
+        <li><a href="./dashboard_class.html">📅 Classes</a></li>
+        <li><a href="./progress.html">📈 Progress</a></li>
+        <li><a href="./dashboard_trainers.html">🏋‍♀ Trainers</a></li>
+        <li><a href="./dashboard_services.html">⚙️ Services</a></li>
+        <li><a href="./dashboard_contact.html">➤ Contact</a></li>
+        <li><a href="./dashboard_about.html" style="background-color: rgb(255, 107, 53); color:white;">ℹ️ About</a></li>
+        <li><a href="./logout.php">🚪 Logout</a></li>
+      </ul>
+    </aside>
+
+    <!-- MAIN CONTENT -->
+    <main class="main-content">
+      <header class="dashboard-header">
+        <h1 style="color: #ff5e00;">About FitnessHub</h1>
+        <p>Learn more about our story, mission, and values.</p>
+      </header>
+
+      <!-- Hero Section -->
+      <section class="about-hero">
+        <div class="hero-content">
+          <h2>Our Story</h2>
+          <p>Building a stronger community through fitness since 2010</p>
+        </div>
+      </section>
+
+      <!-- Mission Section -->
+      <section class="mission-section">
+        <div class="mission-text">
+          <h3>Our Mission</h3>
+          <p>At FitnessHub, we believe fitness should be accessible, enjoyable, and transformative for everyone. Our mission is to create a supportive environment where members of all fitness levels can achieve their health goals.</p>
+          <div class="mission-stats">
+            <div class="stat"><span>12+</span><p>Years in Business</p></div>
+            <div class="stat"><span>5,000+</span><p>Members Served</p></div>
+            <div class="stat"><span>15</span><p>Certified Trainers</p></div>
+          </div>
+        </div>
+        <div class="mission-image">
+          <img src="gym interior.jpg" alt="Gym Interior">
+        </div>
+      </section>
+
+      <!-- Values Section -->
+      <section class="values-section">
+        <h3>Our Core Values</h3>
+        <div class="values-grid">
+          <div class="value-card">
+            <i class="fas fa-heartbeat"></i>
+            <h4>Health First</h4>
+            <p>We prioritize safe, effective training methods that promote lifelong wellness.</p>
+          </div>
+          <div class="value-card">
+            <i class="fas fa-users"></i>
+            <h4>Community</h4>
+            <p>We foster a welcoming environment where everyone belongs.</p>
+          </div>
+          <div class="value-card">
+            <i class="fas fa-star"></i>
+            <h4>Excellence</h4>
+            <p>We maintain high standards in facilities, equipment, and coaching.</p>
+          </div>
+          <div class="value-card">
+            <i class="fas fa-hand-holding-heart"></i>
+            <h4>Support</h4>
+            <p>We meet you where you are and help you progress at your pace.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Founders Section -->
+      <section class="team-section">
+        <h3>Meet Our Founders</h3>
+        <div class="founders-grid">
+          <div class="founder-card">
+            <img src="shazzad1.jpeg" alt="Shazzad">
+            <h4>MD. Shazzadul Haque</h4>
+            <p class="title">CEO & Head Trainer</p>
+            <p>With 20+ years in fitness training, Shazzad created FitnessHub to bring professional-grade training to the community.</p>
+          </div>
+          <div class="founder-card">
+            <img src="ovi.jpeg" alt="Hanif">
+            <h4>Abu Hanif</h4>
+            <p class="title">COO & Nutrition Expert</p>
+            <p>Hanif combines his background in sports nutrition with operational excellence to power our members' success.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- CTA -->
+     
+
+      <footer class="dashboard-footer">
+        <p>&copy; 2025 FitnessHub Gym. All rights reserved.</p>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>

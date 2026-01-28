@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Classes | FitnessHub Gym</title>
+<style>
+:root {
+    --primary: rgb(255, 107, 53);
+    --bg: #f3f4f6;
+    --card-bg: #ffffff;
+    --text-dark: #222;
+}
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    background: var(--bg);
+    color: var(--text-dark);
+}
+.sidebar {
+    width: 230px;
+    background: var(--card-bg);
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border-right: 1px solid #ddd;
+}
+.sidebar h2 {
+    text-align: center;
+    margin: 20px 0;
+    color: var(--primary);
+}
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+.sidebar ul li {
+    margin: 15px 0;
+}
+.sidebar ul li a {
+    color: inherit;
+    text-decoration: none;
+    padding: 10px 20px;
+    display: block;
+    border-radius: 8px;
+    transition: 0.2s;
+}
+.sidebar ul li a:hover {
+    background: var(--primary);
+    color: #fff;
+}
+.main-content {
+    margin-left: 230px;
+    padding: 30px;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header h1 {
+    color: var(--primary);
+}
+.classes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+    margin-top: 30px;
+}
+.class-card {
+    background: var(--card-bg);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+.class-card:hover {
+    transform: translateY(-5px);
+}
+.class-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+.class-card .info {
+    padding: 15px;
+}
+.class-card h3 {
+    margin: 5px 0;
+    color: var(--primary);
+}
+.class-card p {
+    margin: 4px 0;
+    font-size: 14px;
+}
+button {
+    margin-top: 10px;
+    background: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+button:hover { background: #1f5ecf; }
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    color: #777;
+}
+</style>
+</head>
+<body>
+
+<div class="sidebar">
+    <h2> FitnessHub</h2>
+    <ul>
+        <li><a href="./dashboard1.php" >🏠 Dashboard</a></li>
+        <li><a href="./edit_profile.php">👤 Edit Profile</a></li>
+        <li><a href="./payment.html">💳 Payments</a></li>
+        <li><a href="./dashboard_class.html" style="background-color: rgb(255, 107, 53); color:white;">📅 Classes</a></li>
+        <li><a href="./progress.html">📈 Progress</a></li>
+        <li><a href="./dashboard_trainers.html">🏋‍♀ Trainers</a></li>
+        <li><a href="./dashboard_srvices.html">⚙️ Services</a></li>
+        <li><a href="./dashboard_contact.html">➤ Contact</a></li>
+        <li><a href="./dashboard_about.html">ℹ️ About</a></li>
+        <li><a href="./logout.php">🚪 Logout</a></li>
+    </ul>
+</div>
+
+<div class="main-content">
+    <div class="header">
+        <h1>Our Fitness Classes</h1>
+    </div>
+
+    <div class="classes-grid">
+        <div class="class-card">
+            <img src="./yoga class.jpg" alt="Yoga">
+            <div class="info">
+                <h3>Yoga Basics</h3>
+                <p><strong>Trainer:</strong> Sarah Khan</p>
+                <p><strong>Schedule:</strong> Mon & Wed - 7 AM</p>
+                                <a href="./class_join.html">
+  	<button>Join Now</button>
+</a>
+            </div>
+        </div>
+
+        <div class="class-card">
+            <img src="hiit class.webp" alt="HIIT">
+            <div class="info">
+                <h3>HIIT Blast</h3>
+                <p><strong>Trainer:</strong> Alex Rahman</p>
+                <p><strong>Schedule:</strong> Tue & Thu - 6 PM</p>
+                                <a href="./class_join.html">
+  	<button>Join Now</button>
+</a>
+            </div>
+        </div>
+
+        <div class="class-card">
+            <img src="./zumba.jpg" alt="Zumba">
+            <div class="info">
+                <h3>Zumba Dance</h3>
+                <p><strong>Trainer:</strong> Mina Ali</p>
+                <p><strong>Schedule:</strong> Fri - 5 PM</p>
+                               <a href="./class_join.html">
+  	<button>Join Now</button>
+</a>
+            </div>
+        </div>
+
+        <div class="class-card">
+            <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=800&q=60" alt="Strength Training">
+            <div class="info">
+                <h3>Strength Training</h3>
+                <p><strong>Trainer:</strong> John Das</p>
+                <p><strong>Schedule:</strong> Sat - 9 AM</p>
+                
+                  <a href="./class_join.html">
+  	<button>Join Now</button>
+</a>
+            </div>
+        </div>
+    </div>
+
+    <footer style="margin-top: 300px;">
+        <p>&copy; 2025 FitnessHub Gym. All rights reserved.</p>
+    </footer>
+</div>
+
+</body>
+</html>
