@@ -7,7 +7,7 @@ This project is built using **HTML, CSS, JavaScript, and PHP** with a focus on u
 <br>
 <br>
 ## 🚀 Features<br>
-<br>
+
 * 🔐 Secure Admin Login<br>
 * 👥 Member Registration & Management<br>
 * 🏋️ Trainer Information Management<br>
@@ -16,40 +16,40 @@ This project is built using **HTML, CSS, JavaScript, and PHP** with a focus on u
 * 📊 Dashboard with key gym data<br>
 * 🖥️ Responsive and user-friendly interface<br>
 <br>
-<br>
+
 
 ## 🛠️ Technologies Used<br>
-<br>
+
 
 **Frontend**<br>
-<br>
+
 * HTML5<br>
 * CSS3<br>
 * JavaScript<br>
-<br>
+  
 
 **Backend**<br>
-<br>
+
 * PHP<br>
-<br>
+
 
 **Database**<br>
-<br>
+
 * MySQL<br>
-<br>
+
 
 **Tools**<br>
-<br>
+
 * XAMPP / WAMP<br>
 * Git & GitHub<br>
-<br>
-<br>
+  
+
 
 ## 📂 Project Structure<br>
-<br>
+
 <br>
 Gym-Management-System/<br>
-│<br>
+│
 ├── css/            # Stylesheets<br>
 ├── js/             # JavaScript files<br>
 ├── php/            # Backend PHP scripts<br>
@@ -59,39 +59,37 @@ Gym-Management-System/<br>
 └── README.md<br>
 ```
 <br>
-<br>
 
 ## ⚙️ Installation & Setup<br>
-<br>
+
 
 1. **Clone the repository**<br>
-<br>
 ```bash<br>
 git clone https://github.com/shzzadul42/gym-management-system.git<br>
 ```<br>
-<br>
+
 
 2. **Move the project**<br>
-<br>
+
 * Copy the project folder to:<br>
-<br>
+
   ```<br>
   htdocs (XAMPP) or www (WAMP)<br>
   ```<br>
-<br>
+
 
 3. **Create Database**<br>
-<br>
+
 
 * Open **phpMyAdmin**<br>
 * Create a database (e.g., `gym_management`)<br>
 * Import the SQL file from the `database` folder<br>
 <br>
-<br>
+
 4. **Configure Database Connection**<br>
-<br>
+
 * Update database credentials in the PHP config file:<br>
-<br>
+
 ```php<br>
 $servername = "localhost";<br>
 $username = "root";<br>
@@ -99,31 +97,29 @@ $password = "";<br>
 $database = "gym_management";<br>
 ```
 <br>
-<br>
+
 
 5. **Run the Project**<br>
-<br>
 * Start Apache & MySQL<br>
 * Open browser and visit:<br>
-<br>
+  
 ```<br>
 http://localhost/gym-management-system<br>
 ```
 <br>
-<br>
+
 ---<br>
 
 ## 🎯 Purpose of the Project<br>
-<br>
 This project was developed as part of learning **full-stack web development** and to gain hands-on experience with:<br>
-<br>
+
 * Frontend & backend integration<br>
 * PHP & MySQL database handling<br>
 * Real-world CRUD operations<br>
 * Building scalable web applications<br>
 <br>
 ---<br>
-<br>
+
 
 ## 🔮 Future Enhancements<br>
 <br>
@@ -132,27 +128,27 @@ This project was developed as part of learning **full-stack web development** an
 * Email/SMS notifications<br>
 * Role-based access control<br>
 * REST API integration<br>
-<br>
+
 ---<br>
-<br>
+
 
 ## 🤝 Contributing<br>
-<br>
+
 Contributions, issues, and feature requests are welcome!<br>
 Feel free to fork the repository and submit a pull request.<br>
 <br>
 ---<br>
-<br>
+
 
 ## 📜 License<br>
-<br>
+
 
 This project is open-source and available under the **MIT License**.<br>
 <br>
 ---<br>
-<br>
+
 ## 👤 Author<br>
-<br>
+
 
 **Shazzadul Haque**<br>
 🎓 ICE Student  <br>
